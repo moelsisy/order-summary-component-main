@@ -1,0 +1,197 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+/* End */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: url(images/pattern-background-desktop.svg), no-repeat;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  background-position-y: -100px;
+  background-position-x: -150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 400px;
+  background-color: white;
+  min-height: 590px;
+  display: flex;
+  border-radius: 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+.container .content .main-img img {
+  width: 400px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.main-text {
+  width: 85%;
+  margin: auto;
+  padding: 15px;
+}
+
+.main-text h2 {
+  margin: 10px 0;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.main-text p {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.music {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(228, 100%, 98%);
+  align-items: center;
+  width: 85%;
+  margin: auto;
+  height: 90px;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.music .icon-music img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.music .icon-music p {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  line-height: 1.5;
+}
+
+span {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.music a {
+  color: hsl(245, 75%, 52%);
+  font-size: 14px;
+  font-weight: 800;
+  transition: all 0.3s ease-in;
+}
+
+.music a:hover {
+  color: hsl(224, 76%, 60%);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+
+  width: 85%;
+  margin: auto;
+}
+
+footer .btn {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(245, 75%, 52%);
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  box-shadow: 0px 15px 20px 0px hsla(245, 75%, 52%, 0.24);
+  transition: 0.3s ease-in;
+}
+
+footer .btn:hover {
+  background-color: hsla(245, 75%, 52%, 0.699);
+  cursor: default;
+}
+
+#btn-main p {
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+}
+
+#btn-main p:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: default;
+}
+
+/* Small */
+@media (max-width: 549px) {
+  .container {
+    width: 350px;
+    height: auto;
+    background-color: white;
+    min-height: 560px;
+  }
+
+  .container .content .main-img img {
+    width: 350px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .main-text {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+  }
+  .music {
+    width: 80%;
+
+    height: 70px;
+
+    padding: 20px;
+  }
+  .music .icon-music img {
+    width: 35px;
+    margin-right: 7px;
+  }
+  .music .icon-music p {
+    display: inline-block;
+    font-size: 15px;
+  }
+  .music a {
+    color: hsl(245, 75%, 52%);
+    font-size: 13px;
+  }
+  footer {
+    text-align: center;
+
+    width: 78%;
+    margin: auto;
+  }
+  footer .btn {
+    padding: 15px 0;
+    box-shadow: 0px 10px 15px 0px hsla(245, 75%, 52%, 0.24);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #btn-main p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
